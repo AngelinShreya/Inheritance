@@ -1,0 +1,27 @@
+package com.demo;
+
+public class MultiLvl extends Child2 {
+	public static void main(String args[]) {
+		
+		System.out.println(name);
+		System.out.println(rollno);
+		add();
+	}
+
+}
+class ParentClass {
+	public static int mark1=5;
+	public static int mark2=5;
+	static void add() {
+		 System.out.println(mark1+mark2);
+	 }
+}
+ 
+class ChildClass1 extends ParentClass {
+	public static int rollno=5;
+	
+}
+
+class Child2 extends ChildClass1{
+	public static String name="angel";
+}
