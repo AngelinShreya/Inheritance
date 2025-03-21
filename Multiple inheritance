@@ -1,0 +1,39 @@
+package com.demo;
+
+public interface MultipleInherit extends Parent1,Parent2,Parent3 {
+	public void one();
+	public void two();
+}
+
+interface Parent1{
+	public void one();
+	public void two();
+}
+
+interface Parent2{
+	public void one();
+	public void two();
+}
+
+interface Parent3{
+	public void one();
+	public void two();
+}
+
+
+another file
+
+package com.demo;
+
+public class MultipleInheritClass {
+	public static void main(String args[]) {
+		MultipleInherit ml=new MultipleInherit() {
+			public void one() {
+				
+			}
+			public void two() {
+				
+			}
+		};
+	}
+}
