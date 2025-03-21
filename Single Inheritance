@@ -1,0 +1,17 @@
+package com.demo;
+
+	public class SingleInherit extends Parent {//child
+		public static void main(String args[]) {
+			add();
+			System.out.println(a);
+		}
+
+	}
+	//parent class
+	class Parent{
+		public static int a=10;
+		public static int b=5;
+		static int add() {
+			return a+b;
+		}
+	}
